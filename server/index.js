@@ -33,6 +33,14 @@ app.use(bodyParser.urlencoded({limit: "30mb",extended: true}))
 app.use(cors())
 app.use("/assets",express.static(path.join(__dirname, 'public/assets')))
 
+app.use(cors(
+  {
+    origin: ["https://deploy-mern-1.vercel.app"],
+    methods: ["POST","GET"],
+    credentials: true
+  }
+))
+
 
 //whenever someone uploads a file, it will save in this folder
 const storage = multer.diskStorage({
