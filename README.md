@@ -1,6 +1,6 @@
 ## **ConnectiFy - where every click connects you!**
 
-_A social media fullstack application made using MERN stack_
+_A social media fullstack responsive application made using MERN stack_
 
 ### **Features**
 1. Authorization
@@ -10,12 +10,4 @@ _A social media fullstack application made using MERN stack_
 5. Like Post
 6. Image Upload
 
-### **Tools Used**
-1. MongoDB
-2. React
-3. Express
-4. Node
-5. Redux Toolkit
-6. Material UI Library
-7. Yup
-8. Formik
+### **Tools Used** :  MongoDB, React, Express, Node, Redux Toolkit, Material UI Library, Yup, Formik
