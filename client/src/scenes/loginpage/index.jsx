@@ -13,7 +13,7 @@ const LoginPage = () => {
             fontSize="32px"
             color="primary"
           >
-            SocioPedia
+            ConnectiFy
           </Typography>
       </Box>
       <Box
