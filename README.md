@@ -9,13 +9,13 @@ _A social media fullstack responsive application made using MERN stack_
 - Friend List: Ability to add and manage friends within the platform.
 - Like Post: Option to like posts shared by friends or followers.
 - Image Upload: Capability to upload images and multimedia content.
-
-### 💻 **Tools Used** :  
-  -MongoDB
-  -React
-  -Express
-  -Node
-  -Redux Toolkit
-  -Material UI Library
-  -Yup
-  -Formik
+ 
+### 💻 **Tools Used** :
+ - MongoDB
+ - React
+ - Express
+ - Node
+ - Redux Toolkit
+ - Material UI Library
+ - Yup
+ - Formik
