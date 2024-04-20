@@ -11,11 +11,11 @@ _A social media fullstack responsive application made using MERN stack_
 - Image Upload: Capability to upload images and multimedia content.
 
 ### 💻 **Tools Used** :  
--MongoDB
--React
--Express
--Node
--Redux Toolkit
--Material UI Library
--Yup
--Formik
+  -MongoDB
+  -React
+  -Express
+  -Node
+  -Redux Toolkit
+  -Material UI Library
+  -Yup
+  -Formik
