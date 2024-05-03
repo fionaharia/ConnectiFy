@@ -47,6 +47,7 @@ filename: function(req,file,cb){
 const upload = multer({storage});
 
 //routes
+app.get("/", (req,res) =>{return res.send("backend page")} );
 app.post("/auth/register",upload.single("picture"), register);
 app.post("/posts", verifyToken, upload.single("picture"), createPost);
 
