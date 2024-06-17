@@ -30,9 +30,14 @@ app.use(helmet.crossOriginResourcePolicy({policy: "cross-origin"}))
 app.use(morgan("common"))
 app.use(bodyParser.json({limit: "30mb", extended: true}))
 app.use(bodyParser.urlencoded({limit: "30mb",extended: true}))
-app.use(cors())
 app.use("/assets",express.static(path.join(__dirname, 'public/assets')))
 
+const corsOptions ={
+    origin:'https://connecti-fy.vercel.app/', 
+    allow_methods: ["POST","GET"],
+    credentials:true,          
+    optionSuccessStatus:200
+}
 
 //whenever someone uploads a file, it will save in this folder
 const storage = multer.diskStorage({
@@ -54,6 +59,7 @@ app.post("/posts", verifyToken, upload.single("picture"), createPost);
 app.use("/auth", authRoutes)
 app.use("/users", userRoutes)
 app.use("/posts", postRoutes )
+app.use(cors(corsOptions))
 
 //mongoose setup
 const PORT = process.env.PORT || 6001 ;
